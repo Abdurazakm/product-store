@@ -1,23 +1,27 @@
 {
   "name": "marna-fullstack",
   "version": "1.0.0",
+  "description": "A beautiful, modern product management system built with React.js + Vite (frontend) and Node.js + Express + MongoDB (backend).",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon backend/server.js",
-    "start": "node backend/server.js"
+    "dev": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdurazakm/product-store.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "bugs": {
+    "url": "https://github.com/Abdurazakm/product-store/issues"
+  },
+  "homepage": "https://github.com/Abdurazakm/product-store#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "mongoose": "^8.17.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
+    "mongoose": "^8.17.2"
   }
 }
