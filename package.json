@@ -4,9 +4,10 @@
   "description": "A beautiful, modern product management system built with React.js + Vite (frontend) and Node.js + Express + MongoDB (backend).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon backend/server.js"
-  },
+    "dev": "NODE_ENV=development nodemon backend/server.js",
+		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+		"start": "NODE_ENV=production node backend/server.js"
+	 },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Abdurazakm/product-store.git"
